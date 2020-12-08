@@ -1,6 +1,7 @@
 package _02_nested_loops._3_for_loop_gauntlet;
 
 public class big_loop_time {
+	int firstInt=0;
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -36,8 +37,16 @@ public class big_loop_time {
 		for(int i=2005;i<2021;i++) {
 			System.out.println("in "+i+" I was "+ (-2006 + i) +" years old!");
 		}
-		
-		for(int i=1;i<4;i++)
+		for(int i=0;i<3;i++) {
+			for(int j=0;j<3;j++) {
+				System.out.println(i+" " +j);
+			}
+		}
+		for(int i=1;i<8;i=i+3) {
+			for(int j=2;j<10;j+=3)
+			 System.out.println(i+" "+j);
+		}
+	
 	}
 
 }
